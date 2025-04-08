@@ -1,0 +1,260 @@
+{
+  "changes" : [ {
+    "event_info" : {
+      "date" : "08/04/2025 19:59:06",
+      "sequence" : 700013,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "INSERT",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jfperet",
+      "guid" : "49d6ad31-0bba-4e0d-bf8f-b2f8a12bc415"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb4"
+    },
+    "session_info" : {
+      "machine" : "dbf321b804d8",
+      "os_user" : "root",
+      "tasy_user" : "jfperet"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : null
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : null
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : null
+    }, {
+      "column_name" : "IE_MEMORIA",
+      "data_type" : "VARCHAR2",
+      "new_value" : "N",
+      "old_value" : null
+    }, {
+      "column_name" : "DT_CRIACAO",
+      "data_type" : "DATE",
+      "new_value" : "08/04/2025 16:59:06",
+      "old_value" : null
+    }, {
+      "column_name" : "DS_APLICACAO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Tasy",
+      "old_value" : null
+    }, {
+      "column_name" : "NM_USUARIO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "jfperet",
+      "old_value" : null
+    }, {
+      "column_name" : "IE_GERAR_SCRIPT",
+      "data_type" : "VARCHAR2",
+      "new_value" : "S",
+      "old_value" : null
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : null
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : null
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P IS\nBEGIN\n\ninsert into ERRO_ESCRITURAL(cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', 'R');\ncommit;\n\nDELETE FROM ERROR_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;\n/",
+      "old_value" : null
+    }, {
+      "column_name" : "DT_ATUALIZACAO",
+      "data_type" : "DATE",
+      "new_value" : "08/04/2025 19:55:05",
+      "old_value" : null
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10145820,
+      "old_value" : null
+    }, {
+      "column_name" : "IE_CRIPTOGRAFIA",
+      "data_type" : "VARCHAR2",
+      "new_value" : "N",
+      "old_value" : null
+    }, {
+      "column_name" : "DS_LAYER",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CORE.CMDK_LTDA",
+      "old_value" : null
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "08/04/2025 19:59:06",
+      "sequence" : 700014,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jfperet",
+      "guid" : "6ef3b2d8-2207-4b79-b34c-86cf4ab94808"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb4"
+    },
+    "session_info" : {
+      "machine" : "dbf321b804d8",
+      "os_user" : "root",
+      "tasy_user" : "jfperet"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : "CMDKLTD_INSERE_CONTRATO_P"
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : "Oracle"
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : "CMDKLTD_INSERE_CONTRATO_P"
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : "PROCEDURE"
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P() IS\nBEGIN\n\ninsert into ERRO_ESCRITURAL(cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', 'R');\ncommit;\n\nDELETE FROM ERROR_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;\n/",
+      "old_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P IS\nBEGIN\n\ninsert into ERRO_ESCRITURAL(cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', 'R');\ncommit;\n\nDELETE FROM ERROR_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;\n/"
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10145820,
+      "old_value" : 10145820
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "08/04/2025 19:59:06",
+      "sequence" : 700015,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jfperet",
+      "guid" : "1d0e53fe-ba44-49bc-8350-c0aa2026ceaa"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb4"
+    },
+    "session_info" : {
+      "machine" : "dbf321b804d8",
+      "os_user" : "root",
+      "tasy_user" : "jfperet"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : "CMDKLTD_INSERE_CONTRATO_P"
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : "Oracle"
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : "CMDKLTD_INSERE_CONTRATO_P"
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : "PROCEDURE"
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P(p_is_rejeitado in varchar2) IS\nBEGIN\n\ninsert into ERRO_ESCRITURAL(cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', p_is_rejeitado);\ncommit;\n\nDELETE FROM ERROR_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;\n/",
+      "old_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P() IS\nBEGIN\n\ninsert into ERRO_ESCRITURAL(cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', 'R');\ncommit;\n\nDELETE FROM ERROR_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;\n/"
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10145820,
+      "old_value" : 10145820
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "08/04/2025 19:59:06",
+      "sequence" : 700016,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jfperet",
+      "guid" : "01bab142-718f-4618-867e-a770e57be55b"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb4"
+    },
+    "session_info" : {
+      "machine" : "dbf321b804d8",
+      "os_user" : "root",
+      "tasy_user" : "jfperet"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : "CMDKLTD_INSERE_CONTRATO_P"
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : "Oracle"
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : "CMDKLTD_INSERE_CONTRATO_P"
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : "PROCEDURE"
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P(p_is_rejeitado in varchar2) IS\nBEGIN\n\ninsert into ERRO_ESCRITURAL(cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', p_is_rejeitado);\ncommit;\n\nDELETE FROM ERRO_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;\n/",
+      "old_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P(p_is_rejeitado in varchar2) IS\nBEGIN\n\ninsert into ERRO_ESCRITURAL(cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', p_is_rejeitado);\ncommit;\n\nDELETE FROM ERROR_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;\n/"
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10145820,
+      "old_value" : 10145820
+    } ]
+  } ]
+}
