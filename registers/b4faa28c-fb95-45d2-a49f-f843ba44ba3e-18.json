@@ -1,0 +1,109 @@
+{
+  "changes" : [ {
+    "event_info" : {
+      "date" : "09/04/2025 12:48:06",
+      "sequence" : 700017,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jfperet",
+      "guid" : "6cc0d148-2411-404d-a7f6-4d65b5ee346f"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb4"
+    },
+    "session_info" : {
+      "machine" : "b94668ae976e",
+      "os_user" : "root",
+      "tasy_user" : "jfperet"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : "CMDKLTD_INSERE_CONTRATO_P"
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : "Oracle"
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : "CMDKLTD_INSERE_CONTRATO_P"
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P(p_is_rejeitado in varchar2) IS\nBEGIN\n\ninsert into ERRO_ESCRITURAL(cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', p_is_rejeitado);\ncommit;\n\nDELETE FROM ERRO_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;/",
+      "old_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P(p_is_rejeitado in varchar2) IS\nBEGIN\n\ninsert into ERRO_ESCRITURAL(cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', p_is_rejeitado);\ncommit;\n\nDELETE FROM ERRO_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;\n/"
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10145820,
+      "old_value" : 10145820
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : "PROCEDURE"
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "09/04/2025 12:48:06",
+      "sequence" : 700018,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jfperet",
+      "guid" : "431ff80b-2fa6-44ce-a64a-d130452174c8"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb4"
+    },
+    "session_info" : {
+      "machine" : "b94668ae976e",
+      "os_user" : "root",
+      "tasy_user" : "jfperet"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : "CMDKLTD_INSERE_CONTRATO_P"
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : "Oracle"
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : "CMDKLTD_INSERE_CONTRATO_P"
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P(p_is_rejeitado in varchar2) IS\nBEGIN\n\nINSERT INTO ERRO_ESCRITURAL (cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', p_is_rejeitado);\ncommit;\n\nDELETE FROM ERRO_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;/",
+      "old_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P(p_is_rejeitado in varchar2) IS\nBEGIN\n\ninsert into ERRO_ESCRITURAL(cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', p_is_rejeitado);\ncommit;\n\nDELETE FROM ERRO_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;/"
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10145820,
+      "old_value" : 10145820
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : "PROCEDURE"
+    } ]
+  } ]
+}
