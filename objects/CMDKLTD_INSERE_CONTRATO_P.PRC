@@ -49,4 +49,3 @@ DELETE FROM ERRO_ESCRITURAL WHERE nm_usuario = 'jfperet';
 commit;
 
 END;/
-
