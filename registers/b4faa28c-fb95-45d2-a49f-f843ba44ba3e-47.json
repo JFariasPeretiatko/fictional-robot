@@ -1,0 +1,109 @@
+{
+  "changes" : [ {
+    "event_info" : {
+      "date" : "28/04/2025 13:49:26",
+      "sequence" : 700046,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jfperet",
+      "guid" : "ad6098e7-b528-4d4a-bc75-3e16dce0b1f7"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb4"
+    },
+    "session_info" : {
+      "machine" : "cab6f9c9ae00",
+      "os_user" : "root",
+      "tasy_user" : "jfperet"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : "CMDKLTD_INSERE_CONTRATO_P"
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : "Oracle"
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : "CMDKLTD_INSERE_CONTRATO_P"
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : "PROCEDURE"
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P(p_is_rejeitado in varchar2, nr_seq_p in number) IS\nBEGIN\n\nINSERT INTO ERRO_ESCRITURAL (cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', p_is_rejeitado);\nINSERT INTO tipo_acomodacao (\n    CD_TIPO_ACOMODACAO,\n    ds_tipo_acomodacao,\n    cd_nivel_acomodacao,\n    ie_situacao,\n    dt_atualizacao,\n    nm_usuario,\n    cd_procedimento,\n    hr_virada_diaria,\n    hr_margem_ant_virdia,\n    hr_margem_pos_virdia,\n    ie_origem_proced,\n    ie_classificacao,\n    cd_procedimento_acomp,\n    ie_origem_proced_acomp,\n    ds_cor,\n    dt_atualizacao_nrec,\n    nm_usuario_nrec,\n    ie_tipo_acomod_tiss,\n    ie_sem_acomodacao\n) VALUES (\n    nr_seq_p,\n    'Hospital Dia',\n    '1',\n    'A',\n    TO_DATE('25/02/14', 'DD/MM/RR'),\n    'jfperet',\n    '1020051',\n    TO_DATE('30/12/99', 'DD/MM/RR'),\n    NULL,\n    TO_DATE('30/12/99', 'DD/MM/RR'),\n    '1',\n    '11',\n    NULL,\n    '1',\n    NULL,\n    NULL,\n    NULL,\n    '34',\n    'N'\n);\ncommit;\n\nDELETE FROM ERRO_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;\n/",
+      "old_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P(p_is_rejeitado in varchar2, nr_seq_p in number) IS\nBEGIN\n\nINSERT INTO ERRO_ESCRITURAL (cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', p_is_rejeitado);\nINSERT INTO tipo_acomodacao (\n    CD_TIPO_ACOMODACAO,\n    ds_tipo_acomodacao,\n    cd_nivel_acomodacao,\n    ie_situacao,\n    dt_atualizacao,\n    nm_usuario,\n    cd_procedimento,\n    hr_virada_diaria,\n    hr_margem_ant_virdia,\n    hr_margem_pos_virdia,\n    ie_origem_proced,\n    ie_classificacao,\n    cd_procedimento_acomp,\n    ie_origem_proced_acomp,\n    ds_cor,\n    dt_atualizacao_nrec,\n    nm_usuario_nrec,\n    ie_tipo_acomod_tiss,\n    ie_sem_acomodacao\n) VALUES (\n    nr_seq_p,\n    'Hospital Dia',\n    '1',\n    'A',\n    TO_DATE('25/02/14', 'DD/MM/RR'),\n    'jfperet',\n    '1020051',\n    TO_DATE('30/12/99', 'DD/MM/RR'),\n    NULL,\n    TO_DATE('30/12/99', 'DD/MM/RR'),\n    '1',\n    '11',\n    NULL,\n    '1',\n    NULL,\n    NULL,\n    NULL,\n    '34',\n    'N'\n);\ncommit;\n\nDELETE FROM ERRO_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;/"
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10145820,
+      "old_value" : 10145820
+    } ]
+  }, {
+    "event_info" : {
+      "date" : "28/04/2025 13:49:26",
+      "sequence" : 700047,
+      "date_format" : "dd/mm/rrrr hh24:mi:ss",
+      "dml_operation" : "UPDATE",
+      "table_name" : "OBJETO_SISTEMA",
+      "tag_name" : "CMDK",
+      "tasy_user" : "jfperet",
+      "guid" : "08e93a45-5449-42b5-be3b-4ee4409a8a80"
+    },
+    "server_info" : {
+      "charset" : "AMERICAN_AMERICA.AL32UTF8",
+      "database_version" : "19.0",
+      "instance_name" : "phcdb4"
+    },
+    "session_info" : {
+      "machine" : "cab6f9c9ae00",
+      "os_user" : "root",
+      "tasy_user" : "jfperet"
+    },
+    "primary_key_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : "CMDKLTD_INSERE_CONTRATO_P"
+    }, {
+      "column_name" : "IE_BANCO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "Oracle",
+      "old_value" : "Oracle"
+    } ],
+    "column_values" : [ {
+      "column_name" : "NM_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "CMDKLTD_INSERE_CONTRATO_P",
+      "old_value" : "CMDKLTD_INSERE_CONTRATO_P"
+    }, {
+      "column_name" : "IE_TIPO_OBJETO",
+      "data_type" : "VARCHAR2",
+      "new_value" : "PROCEDURE",
+      "old_value" : "PROCEDURE"
+    }, {
+      "column_name" : "DS_SCRIPT_CRIACAO",
+      "data_type" : "LONG",
+      "new_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P(p_is_rejeitado in varchar2, nr_seq_p in number) IS\nBEGIN\n\nINSERT INTO ERRO_ESCRITURAL (cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', p_is_rejeitado);\ncommit;\n\nDELETE FROM ERRO_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;\n/",
+      "old_value" : "CREATE OR REPLACE PROCEDURE CMDKLTD_INSERE_CONTRATO_P(p_is_rejeitado in varchar2, nr_seq_p in number) IS\nBEGIN\n\nINSERT INTO ERRO_ESCRITURAL (cd_banco, cd_erro, dt_atualizacao, nm_usuario, ds_erro, ie_rejeitado) values (40, 999, sysdate, 'jfperet', 'Teste do sistema', p_is_rejeitado);\nINSERT INTO tipo_acomodacao (\n    CD_TIPO_ACOMODACAO,\n    ds_tipo_acomodacao,\n    cd_nivel_acomodacao,\n    ie_situacao,\n    dt_atualizacao,\n    nm_usuario,\n    cd_procedimento,\n    hr_virada_diaria,\n    hr_margem_ant_virdia,\n    hr_margem_pos_virdia,\n    ie_origem_proced,\n    ie_classificacao,\n    cd_procedimento_acomp,\n    ie_origem_proced_acomp,\n    ds_cor,\n    dt_atualizacao_nrec,\n    nm_usuario_nrec,\n    ie_tipo_acomod_tiss,\n    ie_sem_acomodacao\n) VALUES (\n    nr_seq_p,\n    'Hospital Dia',\n    '1',\n    'A',\n    TO_DATE('25/02/14', 'DD/MM/RR'),\n    'jfperet',\n    '1020051',\n    TO_DATE('30/12/99', 'DD/MM/RR'),\n    NULL,\n    TO_DATE('30/12/99', 'DD/MM/RR'),\n    '1',\n    '11',\n    NULL,\n    '1',\n    NULL,\n    NULL,\n    NULL,\n    '34',\n    'N'\n);\ncommit;\n\nDELETE FROM ERRO_ESCRITURAL WHERE nm_usuario = 'jfperet';\ncommit;\n\nEND;\n/"
+    }, {
+      "column_name" : "NR_SEQUENCIA",
+      "data_type" : "NUMBER",
+      "new_value" : 10145820,
+      "old_value" : 10145820
+    } ]
+  } ]
+}
